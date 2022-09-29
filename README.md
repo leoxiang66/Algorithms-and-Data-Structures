@@ -5,7 +5,7 @@ Repo for Algorithms and Data Structures.
 ## Installation:
 
 ```bash
-!pip install git+https://github.com/leoxiang66/Algorithms-and-Data-Structures.git
+pip install git+https://github.com/leoxiang66/Algorithms-and-Data-Structures.git
 ```
 
 ## Examples
