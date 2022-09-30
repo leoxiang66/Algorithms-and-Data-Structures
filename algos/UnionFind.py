@@ -31,6 +31,10 @@ class UnionFind:
             if self.__ranks__[root_i] <= self.__ranks__[root_j]:
                 # root of i --> child
                 self.__parents__[root_i] = root_j
+                self.__ranks__[root_j] = max(self.__ranks__[root_j], self.__ranks__[root_i]+1)
+            else:
+                self.__parents__[root_j] = root_i
+                self.__ranks__[root_i] = max(self.__ranks__[root_i], self.__ranks__[root_j]+1)
 
     def union_step(self):
         length = len(self.__data__)
